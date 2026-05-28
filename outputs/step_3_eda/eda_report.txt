@@ -1,0 +1,33 @@
+STEP 3: EXPLORATORY DATA ANALYSIS REPORT
+========================================
+
+Dataset used: data\heart_disease_cleaned.csv
+Dataset shape: 302 rows and 18 columns
+
+Heart Disease Distribution:
+target_label
+Heart Disease       164
+No Heart Disease    138
+Name: count, dtype: int64
+
+Heart Disease by Sex:
+target_label  Heart Disease  No Heart Disease
+sex_label                                    
+Female                   72                24
+Male                     92               114
+
+Heart Disease by Chest Pain Type:
+target_label      Heart Disease  No Heart Disease
+cp_label                                         
+Asymptomatic                 16                 7
+Atypical Angina              41                 9
+Non-anginal Pain             68                18
+Typical Angina               39               104
+
+Exercise-Induced Angina vs Heart Disease:
+target_label  Heart Disease  No Heart Disease
+exang_label                                  
+No                      141                62
+Yes                      23                76
+
+EDA charts saved in outputs/step_3_eda/.

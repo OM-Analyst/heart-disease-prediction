@@ -21,18 +21,22 @@ The target variable is:
 heart-disease-prediction/
 │
 ├── data/
-│   └── heart_disease.csv
+│   ├── heart_disease.csv
+│   └── heart_disease_cleaned.csv
 │
 ├── outputs/
-│   └── step_1_data_overview/
+│   ├── step_1_data_overview/
+│   ├── step_2_data_cleaning/
+│   └── step_3_eda/
 │
 ├── src/
-│   └── step_1_data_overview.py
+│   ├── step_1_data_overview.py
+│   ├── step_2_data_cleaning.py
+│   └── step_3_eda.py
 │
 ├── requirements.txt
 └── README.md
 ```
-
 ## Dataset Summary
 
 The original dataset contains:
@@ -98,7 +102,7 @@ python src/step_2_data_cleaning.py
 
 - [x] Step 1: Data overview
 - [x] Step 2: Data cleaning and duplicate handling
-- [ ] Step 3: Exploratory data analysis
+- [x] Step 3: Exploratory data analysis
 - [ ] Step 4: Feature preparation
 - [ ] Step 5: Model training
 - [ ] Step 6: Model evaluation
