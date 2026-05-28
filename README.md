@@ -31,3 +31,80 @@ heart-disease-prediction/
 │
 ├── requirements.txt
 └── README.md
+```
+
+## Dataset Summary
+
+The original dataset contains:
+
+- 1,025 rows
+- 14 columns
+- No missing values
+- A balanced target variable
+
+During the data overview stage, 723 duplicate records were identified. These duplicate records were removed during data cleaning, leaving 302 unique patient records for analysis and modelling.
+
+Removing duplicates is important because repeated patient records can cause the machine learning model to overestimate its performance. By using only unique patient records, the project produces a more reliable and realistic heart disease prediction system.
+
+## Step 1: Data Overview
+
+The first step loads the dataset and checks:
+
+- Dataset shape
+- Column names
+- First few records
+- Missing values
+- Duplicate rows
+- Target distribution
+- Summary statistics
+
+## Step 2: Data Cleaning
+
+The second step removes duplicate patient records from the dataset and saves a cleaned version of the data.
+
+The cleaned dataset is saved as:
+
+```text
+data/heart_disease_cleaned.csv
+```
+
+The cleaning report is saved in:
+
+```text
+outputs/step_2_data_cleaning/
+```
+
+## How to Run the Project
+
+Install the required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run Step 1:
+
+```bash
+python src/step_1_data_overview.py
+```
+
+Run Step 2:
+
+```bash
+python src/step_2_data_cleaning.py
+```
+
+## Current Progress
+
+- [x] Step 1: Data overview
+- [x] Step 2: Data cleaning and duplicate handling
+- [ ] Step 3: Exploratory data analysis
+- [ ] Step 4: Feature preparation
+- [ ] Step 5: Model training
+- [ ] Step 6: Model evaluation
+- [ ] Step 7: Model interpretation
+- [ ] Step 8: Health informatics dashboard
+
+## Health Informatics Relevance
+
+This project is relevant to health informatics because it applies data analytics and machine learning to clinical data. The final system can support early risk identification and help healthcare professionals make more informed decisions.

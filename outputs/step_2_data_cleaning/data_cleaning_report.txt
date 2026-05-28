@@ -1,0 +1,38 @@
+STEP 2: DATA CLEANING REPORT
+============================
+
+Original dataset shape: 1025 rows and 14 columns
+Duplicate rows found: 723
+Rows removed: 723
+Cleaned dataset shape: 302 rows and 14 columns
+
+Missing values per column:
+age         0
+sex         0
+cp          0
+trestbps    0
+chol        0
+fbs         0
+restecg     0
+thalach     0
+exang       0
+oldpeak     0
+slope       0
+ca          0
+thal        0
+target      0
+dtype: int64
+
+Total missing values: 0
+
+Target distribution after cleaning:
+target
+1    164
+0    138
+Name: count, dtype: int64
+
+Target distribution percentage after cleaning:
+target
+1    54.3
+0    45.7
+Name: proportion, dtype: float64
