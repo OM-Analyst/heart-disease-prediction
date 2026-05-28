@@ -1,0 +1,27 @@
+STEP 4: FEATURE PREPARATION REPORT
+==================================
+
+Dataset used: data\heart_disease_cleaned.csv
+Original cleaned dataset shape: 302 rows and 14 columns
+
+Features used:
+['age', 'sex', 'cp', 'trestbps', 'chol', 'fbs', 'restecg', 'thalach', 'exang', 'oldpeak', 'slope', 'ca', 'thal']
+
+Target variable:
+target
+
+Train-test split:
+Training data: 80%
+Testing data: 20%
+Random state: 42
+Stratified split: Yes
+
+X_train shape: (241, 13)
+X_test shape: (61, 13)
+y_train shape: (241,)
+y_test shape: (61,)
+
+Numerical columns scaled:
+['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
+
+Processed files saved in data/processed/.

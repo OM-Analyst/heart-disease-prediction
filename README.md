@@ -22,21 +22,29 @@ heart-disease-prediction/
 │
 ├── data/
 │   ├── heart_disease.csv
-│   └── heart_disease_cleaned.csv
+│   ├── heart_disease_cleaned.csv
+│   └── processed/
+│       ├── X_train.csv
+│       ├── X_test.csv
+│       ├── y_train.csv
+│       ├── y_test.csv
+│       ├── scaler.pkl
+│       └── feature_names.csv
 │
 ├── outputs/
 │   ├── step_1_data_overview/
 │   ├── step_2_data_cleaning/
-│   └── step_3_eda/
+│   ├── step_3_eda/
+│   └── step_4_feature_preparation/
 │
 ├── src/
 │   ├── step_1_data_overview.py
 │   ├── step_2_data_cleaning.py
-│   └── step_3_eda.py
+│   ├── step_3_eda.py
+│   └── step_4_feature_preparation.py
 │
 ├── requirements.txt
-└── README.md
-```
+└── README.md```
 ## Dataset Summary
 
 The original dataset contains:
@@ -97,13 +105,43 @@ Run Step 2:
 ```bash
 python src/step_2_data_cleaning.py
 ```
+## Step 3: Exploratory Data Analysis
+
+The third step explores the cleaned heart disease dataset using visual charts and summary tables. Exploratory Data Analysis helps identify patterns, trends, and relationships between patient health indicators and the presence of heart disease.
+
+This step analyzes important clinical features such as age, sex, chest pain type, cholesterol level, resting blood pressure, maximum heart rate, and exercise-induced angina.
+
+The EDA process includes:
+
+- Heart disease distribution
+- Age distribution of patients
+- Heart disease distribution by sex
+- Heart disease distribution by chest pain type
+- Cholesterol distribution
+- Resting blood pressure distribution
+- Maximum heart rate distribution
+- Exercise-induced angina compared with heart disease status
+- Correlation heatmap of numerical and encoded features
+
+The charts and summary reports are saved in:
+
+```text
+outputs/step_3_eda/
+
+## Step 4: Feature Preparation
+
+The fourth step prepares the cleaned dataset for machine learning. The target variable, `target`, is separated from the input features. The data is then split into training and testing sets using an 80/20 split.
+
+A stratified split is used to preserve the balance between patients with heart disease and patients without heart disease in both the training and testing datasets.
+
+Numerical features such as age, resting blood pressure, cholesterol, maximum heart rate, and ST depression are scaled using StandardScaler. The processed training and testing files are saved in the `data/processed/` folder.
 
 ## Current Progress
 
 - [x] Step 1: Data overview
 - [x] Step 2: Data cleaning and duplicate handling
 - [x] Step 3: Exploratory data analysis
-- [ ] Step 4: Feature preparation
+- [x] Step 4: Feature preparation
 - [ ] Step 5: Model training
 - [ ] Step 6: Model evaluation
 - [ ] Step 7: Model interpretation
