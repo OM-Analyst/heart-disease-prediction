@@ -20,6 +20,8 @@ The target variable is:
 ```text
 heart-disease-prediction/
 │
+├── app.py
+│
 ├── data/
 │   ├── heart_disease.csv
 │   ├── heart_disease_cleaned.csv
@@ -191,6 +193,22 @@ The interpretation outputs are saved in:
 ```text
 outputs/step_7_model_interpretation/
 ```
+
+## Step 8: Health Informatics Dashboard
+
+The eighth step creates an interactive health informatics dashboard using Streamlit.
+
+The dashboard allows users to view the project overview, dataset summary, model performance, feature importance results, and a patient risk prediction tool.
+
+The patient risk prediction page allows users to enter patient health values such as age, blood pressure, cholesterol, chest pain type, maximum heart rate, and exercise-induced angina. The saved machine learning model then predicts whether heart disease risk is detected.
+
+This dashboard demonstrates how machine learning can be presented as a simple clinical decision-support tool. The dashboard is for educational purposes only and should not be used as medical advice.
+
+The dashboard can be launched using:
+
+```bash
+streamlit run app.py
+```
 ## Current Progress
 
 - [x] Step 1: Data overview
@@ -200,7 +218,7 @@ outputs/step_7_model_interpretation/
 - [x] Step 5: Model training
 - [x] Step 6: Model evaluation
 - [x] Step 7: Model interpretation
-- [ ] Step 8: Health informatics dashboard
+- [x] Step 8: Health informatics dashboard
 
 ## Health Informatics Relevance
 
