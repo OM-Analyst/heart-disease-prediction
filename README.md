@@ -43,14 +43,16 @@ heart-disease-prediction/
 │   ├── step_2_data_cleaning/
 │   ├── step_3_eda/
 │   ├── step_4_feature_preparation/
-│   └── step_5_model_training/
+│   ├── step_5_model_training/
+│   └── step_6_model_evaluation/
 │
 ├── src/
 │   ├── step_1_data_overview.py
 │   ├── step_2_data_cleaning.py
 │   ├── step_3_eda.py
 │   ├── step_4_feature_preparation.py
-│   └── step_5_model_training.py
+│   ├── step_5_model_training.py
+│   └── step_6_model_evaluation.py
 │
 ├── .gitignore
 ├── requirements.txt
@@ -158,6 +160,21 @@ The models are compared using accuracy, precision, recall, F1-score, and ROC-AUC
 
 The best model is selected based on recall and saved for later evaluation and interpretation.
 
+## Step 6: Model Evaluation
+
+The sixth step evaluates the best machine learning model using the testing dataset. This step checks how well the selected model performs on data it has not seen during training.
+
+The model is evaluated using accuracy, precision, recall, F1-score, ROC-AUC, a confusion matrix, and a classification report.
+
+The confusion matrix shows how many patients were correctly and incorrectly classified as having heart disease or not having heart disease. The ROC curve shows how well the model separates patients with heart disease from patients without heart disease.
+
+In this health informatics project, recall is especially important because it measures how well the model identifies patients who actually have heart disease. A high recall helps reduce the risk of missing patients who may need further medical attention.
+
+The evaluation outputs are saved in:
+
+```text
+outputs/step_6_model_evaluation/
+
 ## Current Progress
 
 - [x] Step 1: Data overview
@@ -165,7 +182,7 @@ The best model is selected based on recall and saved for later evaluation and in
 - [x] Step 3: Exploratory data analysis
 - [x] Step 4: Feature preparation
 - [x] Step 5: Model training
-- [ ] Step 6: Model evaluation
+- [x] Step 6: Model evaluation
 - [ ] Step 7: Model interpretation
 - [ ] Step 8: Health informatics dashboard
 

@@ -1,0 +1,32 @@
+STEP 6: MODEL EVALUATION REPORT
+===============================
+
+Model used: models\best_model.pkl
+X_test shape: (61, 13)
+y_test shape: (61,)
+
+Evaluation Metrics:
+Accuracy: 0.8033
+Precision: 0.8000
+Recall: 0.8485
+F1-score: 0.8235
+ROC-AUC: 0.8701
+
+Confusion Matrix:
+[[21  7]
+ [ 5 28]]
+
+Classification Report:
+                  precision    recall  f1-score   support
+
+No Heart Disease       0.81      0.75      0.78        28
+   Heart Disease       0.80      0.85      0.82        33
+
+        accuracy                           0.80        61
+       macro avg       0.80      0.80      0.80        61
+    weighted avg       0.80      0.80      0.80        61
+
+
+Health Informatics Interpretation:
+
+In this heart disease prediction project, recall is especially important because it measures how well the model identifies patients who actually have heart disease. A high recall means the model is less likely to miss patients who may need further medical attention.
