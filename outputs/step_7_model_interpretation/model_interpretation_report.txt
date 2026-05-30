@@ -1,0 +1,21 @@
+STEP 7: MODEL INTERPRETATION REPORT
+===================================
+
+Model used: models\best_model.pkl
+X_test shape: (61, 13)
+y_test shape: (61,)
+
+Interpretation Method Used:
+Permutation importance was used to identify which features had the strongest influence on the model's heart disease predictions.
+
+Top 5 Important Features:
+- thalach: 0.1182
+- ca: 0.1121
+- cp: 0.1121
+- sex: 0.1015
+- slope: 0.0818
+
+Health Informatics Interpretation:
+The most important features represent clinical indicators that contributed most strongly to the model's prediction of heart disease. These may include factors such as chest pain type, maximum heart rate, exercise-induced angina, ST depression, number of major vessels, or thalassemia results depending on the final trained model.
+
+This step helps make the prediction system more explainable. In a health informatics setting, explainability is important because healthcare workers need to understand which patient factors are influencing risk predictions.

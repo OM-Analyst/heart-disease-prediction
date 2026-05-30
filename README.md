@@ -44,7 +44,8 @@ heart-disease-prediction/
 │   ├── step_3_eda/
 │   ├── step_4_feature_preparation/
 │   ├── step_5_model_training/
-│   └── step_6_model_evaluation/
+│   ├── step_6_model_evaluation/
+│   └── step_7_model_interpretation/
 │
 ├── src/
 │   ├── step_1_data_overview.py
@@ -52,7 +53,8 @@ heart-disease-prediction/
 │   ├── step_3_eda.py
 │   ├── step_4_feature_preparation.py
 │   ├── step_5_model_training.py
-│   └── step_6_model_evaluation.py
+│   ├── step_6_model_evaluation.py
+│   └── step_7_model_interpretation.py
 │
 ├── .gitignore
 ├── requirements.txt
@@ -174,7 +176,21 @@ The evaluation outputs are saved in:
 
 ```text
 outputs/step_6_model_evaluation/
+```
 
+## Step 7: Model Interpretation
+
+The seventh step explains which patient health factors had the strongest influence on the model's heart disease predictions.
+
+Permutation importance is used to measure how important each feature is. This method works by shuffling one feature at a time and checking how much the model's performance changes. If the model performs worse after a feature is shuffled, that feature is considered important.
+
+This step helps make the heart disease prediction model more explainable. In a health informatics setting, explainability is important because healthcare professionals need to understand which clinical factors contribute most to a patient's predicted heart disease risk.
+
+The interpretation outputs are saved in:
+
+```text
+outputs/step_7_model_interpretation/
+```
 ## Current Progress
 
 - [x] Step 1: Data overview
@@ -183,7 +199,7 @@ outputs/step_6_model_evaluation/
 - [x] Step 4: Feature preparation
 - [x] Step 5: Model training
 - [x] Step 6: Model evaluation
-- [ ] Step 7: Model interpretation
+- [x] Step 7: Model interpretation
 - [ ] Step 8: Health informatics dashboard
 
 ## Health Informatics Relevance
