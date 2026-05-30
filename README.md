@@ -138,6 +138,7 @@ The charts and summary reports are saved in:
 
 ```text
 outputs/step_3_eda/
+```
 
 ## Step 4: Feature Preparation
 
