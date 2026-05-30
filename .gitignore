@@ -26,6 +26,3 @@ outputs/**/*.png
 outputs/**/*.jpg
 outputs/**/*.jpeg
 
-# Model files
-*.pkl
-*.joblib
