@@ -31,20 +31,31 @@ heart-disease-prediction/
 │       ├── scaler.pkl
 │       └── feature_names.csv
 │
+├── models/
+│   ├── logistic_regression.pkl
+│   ├── decision_tree.pkl
+│   ├── random_forest.pkl
+│   ├── gradient_boosting.pkl
+│   └── best_model.pkl
+│
 ├── outputs/
 │   ├── step_1_data_overview/
 │   ├── step_2_data_cleaning/
 │   ├── step_3_eda/
-│   └── step_4_feature_preparation/
+│   ├── step_4_feature_preparation/
+│   └── step_5_model_training/
 │
 ├── src/
 │   ├── step_1_data_overview.py
 │   ├── step_2_data_cleaning.py
 │   ├── step_3_eda.py
-│   └── step_4_feature_preparation.py
+│   ├── step_4_feature_preparation.py
+│   └── step_5_model_training.py
 │
+├── .gitignore
 ├── requirements.txt
-└── README.md```
+└── README.md
+```
 ## Dataset Summary
 
 The original dataset contains:
@@ -136,13 +147,23 @@ A stratified split is used to preserve the balance between patients with heart d
 
 Numerical features such as age, resting blood pressure, cholesterol, maximum heart rate, and ST depression are scaled using StandardScaler. The processed training and testing files are saved in the `data/processed/` folder.
 
+## Step 5: Model Training
+
+The fifth step trains multiple machine learning models to predict whether a patient has heart disease.
+
+The models trained include Logistic Regression, Decision Tree, Random Forest, and Gradient Boosting. These models are trained using the prepared training dataset from Step 4 and evaluated using the testing dataset.
+
+The models are compared using accuracy, precision, recall, F1-score, and ROC-AUC. Recall is especially important in this health informatics project because missing a patient who actually has heart disease can be risky.
+
+The best model is selected based on recall and saved for later evaluation and interpretation.
+
 ## Current Progress
 
 - [x] Step 1: Data overview
 - [x] Step 2: Data cleaning and duplicate handling
 - [x] Step 3: Exploratory data analysis
 - [x] Step 4: Feature preparation
-- [ ] Step 5: Model training
+- [x] Step 5: Model training
 - [ ] Step 6: Model evaluation
 - [ ] Step 7: Model interpretation
 - [ ] Step 8: Health informatics dashboard

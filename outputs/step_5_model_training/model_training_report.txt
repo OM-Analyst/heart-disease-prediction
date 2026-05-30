@@ -1,0 +1,21 @@
+STEP 5: MODEL TRAINING REPORT
+=============================
+
+Models trained:
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Gradient Boosting
+
+Model comparison:
+              model  accuracy  precision   recall  f1_score  roc_auc
+Logistic Regression  0.803279   0.800000 0.848485  0.823529 0.870130
+      Decision Tree  0.803279   0.818182 0.818182  0.818182 0.801948
+      Random Forest  0.754098   0.764706 0.787879  0.776119 0.858225
+  Gradient Boosting  0.721311   0.735294 0.757576  0.746269 0.825758
+
+Best model selected based on recall:
+Logistic Regression
+
+Why recall was prioritized:
+Recall is important in healthcare because the model should reduce the chance of missing patients who actually have heart disease.
